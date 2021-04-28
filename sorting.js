@@ -1,9 +1,25 @@
-const lastNames = [Mason, Marcora, Rico, Neves, Ivanov]
+const lastNames = ["Mason", "Marcora", "Rico", "Neves", "Ivanov"]
 
-const yourlastName = prompt("What is your last name?")
-lastNames.push(yourlastName)
+const yourLastName = prompt("What is your last name?")
+lastNames.push(yourLastName)
+
 console.log(lastNames.sort())
-console.log(lastNames.findIndex(yourlastName))
+
+console.log(lastNames.indexOf(yourLastName))
+
+const upperLastNames = []
+
+const allLastNames = []
 for (const lastName of lastNames) {
+    let arr = []
     console.log(lastName.toUpperCase())
+    arr.push(lastName)
+    arr.push(lastName.toUpperCase())
+    allLastNames.push(arr)
 }
+console.log(allLastNames)
+
+
+
+
+
